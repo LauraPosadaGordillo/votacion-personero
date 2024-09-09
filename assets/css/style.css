@@ -1,0 +1,290 @@
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/dancing_script/DancingScript-Regular.ttf') format('truetype'); /* Fuente TrueType para mayor compatibilidad */
+    font-weight: normal; /* Define el peso (normal, bold, etc.) */
+    font-style: normal;  /* Define el estilo (normal, italic, etc.) */
+}
+
+:root {
+    --base-white: #fff;
+    --primary: #236B68;
+    --secondary: #3F8481;
+    --tertiary: #0F5552;
+    --surface: #013B39;
+    --on-surface: #689F9D;
+    --on-surface-50: rgba(106, 160, 158, 0.5);
+}
+
+footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding-bottom: 12px;
+    padding-top: 12px;
+    text-align: center;
+    background-color: var(--base-white);
+}
+
+body, input, textarea, button {
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    background-color: var(--base-white);
+    margin: 0;
+    font-size: 1rem; /* Tamaño de fuente base */
+}
+
+h1, h2 {
+    color: var(--surface);
+    text-align: center;
+}
+
+form>h2 {
+    text-align: center;
+}
+
+label {
+    color: var(--surface);
+    font-size: 1.3rem;
+}
+
+.form-login {
+    width: 80%; /* Unidades flexibles */
+    max-width: 700px; /* Ancho máximo */
+    min-width: fit-content;
+    background-color: var(--on-surface);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar el formulario */
+    border-radius: 12px;
+}
+
+.form-aspirantes {
+    width: 80%; /* Unidades flexibles */
+    max-width: 1500px; /* Ancho máximo */
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+
+    margin-bottom: 48px;
+}
+
+.aspirante {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--on-surface);
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.aspirante>h3 {
+    text-overflow: ellipsis;
+    max-lines: 2;
+    height: 48px;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aspirante>img {
+    border-radius: 16px;
+    object-fit: cover; /* Ajusta el contenido de la imagen sin distorsionarla */
+    aspect-ratio: 1 / 1; /* Mantiene un aspecto de 1:1 (cuadrado) */
+}
+
+#propuestas {
+    padding: 0;
+    height: 100px;
+    overflow: auto;
+}
+
+#propuestas>ul {
+    margin: 0;
+    padding-left: 24px; /* Elimina el espaciado a la izquierda */
+}
+
+::placeholder {
+    color: var(--surface);
+}
+
+input[type="email"], input[type="password"]  {
+    background-color: var(--base-white);
+    font-size: 1rem; /* Escala con el tamaño base */
+    color: var(--surface);
+
+    margin-top: 12px;
+    margin-bottom: 24px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+
+    border: 0px;
+}
+
+input[type="submit"]  {
+    background-color: var(--surface);
+    color: var(--on-surface);
+    font-size: 1rem; /* Escala con el tamaño base */
+
+    margin-top: 12px;
+    margin-bottom: 14px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    font-weight: bolder;
+
+    border: 0px;
+}
+
+.header-login {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 20vh; /* Establece la altura completa de la pantalla */
+}
+
+.header-aspirantes {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 20vh; /* Establece la altura completa de la pantalla */
+
+}
+
+.contenedor-login {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 60vh; /* Establece la altura completa de la pantalla */
+
+    /* background-color: rgb(236, 154, 53); */
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+
+    /* background-color: rgb(236, 154, 53); */
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 639px) {
+
+    body{
+        background-color: var(--on-surface);
+    }
+
+    form {
+        background-color: transparent;
+        width: 70%; /* El formulario ocupa más espacio en pantallas pequeñas */
+        padding: 16px;
+    }
+    
+    .form-login {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.0); /* Sombra para destacar el formulario */
+    }
+    
+    .form-aspirantes{
+        gap: 24px;
+    }
+    
+    .aspirante {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.0); /* Sombra para destacar el formulario */
+    }
+
+    input[type="email"], input[type="password"], input[type="button"] {
+        font-size: 0.9rem;
+    }
+
+    .aspirante {
+        width: 100%;
+        font-size: 1.7rem; /* Tamaños más pequeños para títulos */
+    }
+
+    .aspirante>img {
+        width: 100%;
+        height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    }
+
+    #propuestas {
+        height: 250px;
+    }
+}
+
+/* Media query para pantallas medianas (tabletas) */
+@media (min-width: 640px) and (max-width: 1024px) {
+    form {
+        width: 70%; /* Un poco más ancho en pantallas medianas */
+    }
+
+    .form-aspirantes{
+        gap: 48px;
+    }
+
+    h1, h2 {
+        font-size: 1.7rem; /* Tamaños medianos para títulos */
+    }
+    
+    .aspirante {
+        width: 200px;
+    }
+
+    .aspirante>img {
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+/* Media query para pantallas grandes (escritorio) */
+@media (min-width: 1025px) {
+    form {
+        width: 50%; /* Más pequeño en pantallas grandes */
+    }
+
+    .form-aspirantes{
+        gap: 56px;
+    }
+
+    h1, h2 {
+        font-size: 2rem; /* Tamaños más grandes para títulos */
+    }
+
+    .aspirante {
+        width: 300px;
+    }
+
+    .aspirante>img {
+        width: 300px;
+        height: 300px;
+    }
+}

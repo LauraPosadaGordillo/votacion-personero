@@ -6,173 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Lideres del mañana</title>
-    <link href="/fonts/dancing_script/DancingScript-Regular.ttf" rel="stylesheet">
-
-    <style>
-        @font-face {
-            font-family: 'Dancing Script';
-            src: url('assets/fonts/dancing_script/DancingScript-Regular.ttf') format('truetype'); /* Fuente TrueType para mayor compatibilidad */
-            font-weight: normal; /* Define el peso (normal, bold, etc.) */
-            font-style: normal;  /* Define el estilo (normal, italic, etc.) */
-        }
-        :root {
-            --base-white: #fff;
-            --primary: #236B68;
-            --secondary: #3F8481;
-            --tertiary: #0F5552;
-            --surface: #013B39;
-            --on-surface: #689F9D;
-        }
-
-        body, input, textarea, button {
-            font-family: 'Dancing Script', cursive;
-        }
-
-        body {
-            background-color: var(--base-white);
-            margin: 0;
-            font-size: 1rem; /* Tamaño de fuente base */
-        }
-
-        h1, h2 {
-            color: var(--surface);
-        }
-
-        label {
-            color: var(--surface);
-        }
-
-        form {
-            width: 80%; /* Unidades flexibles */
-            max-width: 700px; /* Ancho máximo */
-            min-width: fit-content;
-            background-color: var(--on-surface);
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar el formulario */
-            border-radius: 12px;
-        }
-
-        ::placeholder {
-            color: var(--surface);
-        }
-
-        input[type="email"], input[type="password"]  {
-            background-color: var(--base-white);
-            font-size: 1rem; /* Escala con el tamaño base */
-            color: var(--base-white);
-
-            margin-top: 12px;
-            margin-bottom: 24px;
-
-            padding-left: 16px;
-            padding-right: 16px;
-            padding-top: 12px;
-            padding-bottom: 12px;
-            border-radius: 8px;
-
-            border: 0px;
-        }
-
-        input[type="button"]  {
-            background-color: var(--surface);
-            color: var(--on-surface);
-            font-size: 1rem; /* Escala con el tamaño base */
-
-            margin-top: 12px;
-            margin-bottom: 14px;
-
-            padding-left: 16px;
-            padding-right: 16px;
-            padding-top: 12px;
-            padding-bottom: 12px;
-            border-radius: 8px;
-
-            border: 0px;
-        }
-
-        header {
-            display: flex;
-            flex-direction: column; /* Alinea los elementos verticalmente */
-            justify-content: center; /* Centra horizontalmente */
-            align-items: center; /* Centra verticalmente */
-            height: 20vh; /* Establece la altura completa de la pantalla */
-        }
-
-
-        .contenedor-formulario {
-            display: flex;
-            flex-direction: column; /* Alinea los elementos verticalmente */
-            justify-content: center; /* Centra horizontalmente */
-            align-items: center; /* Centra verticalmente */
-            height: 60vh; /* Establece la altura completa de la pantalla */
-
-            /* background-color: rgb(236, 154, 53); */
-        }
-
-        /* Media query para pantallas pequeñas (móviles) */
-        @media (max-width: 600px) {
-            form {
-                width: 70%; /* El formulario ocupa más espacio en pantallas pequeñas */
-                padding: 16px;
-            }
-
-            h1, h2 {
-                font-size: 1.2rem; /* Tamaños más pequeños para títulos */
-            }
-
-            input[type="email"], input[type="password"], input[type="button"] {
-                font-size: 0.9rem;
-            }
-        }
-
-        /* Media query para pantallas medianas (tabletas) */
-        @media (min-width: 601px) and (max-width: 1024px) {
-            form {
-                width: 70%; /* Un poco más ancho en pantallas medianas */
-            }
-
-            h1, h2 {
-                font-size: 1.5rem; /* Tamaños medianos para títulos */
-            }
-        }
-
-        /* Media query para pantallas grandes (escritorio) */
-        @media (min-width: 1025px) {
-            form {
-                width: 50%; /* Más pequeño en pantallas grandes */
-            }
-
-            h1, h2 {
-                font-size: 2rem; /* Tamaños más grandes para títulos */
-            }
-        }
-    </style>
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="header-login">
         <h1>LIDERES DEL MAÑANA</h1>
-        <h2>Inicio de sesión</h2>
     </header>
 
-    <div class="contenedor-formulario">
-        <form action="/aspirantes.html">
+    <div class="contenedor-login">
+        <form action="aspirantes.html" method="post" class="form-login">
+            <h2>Inicio de sesión</h2>
             <label for="email">Correo electrónico:</label>
-            <input type="email" name="Correo" id="email" placeholder="Ingresa tu correo institucional">
+            <input type="email" name="Correo" id="email" placeholder="Ingresa tu correo institucional" required
+                title="Por favor, ingresa un correo electrónico válido. Ejemplo: usuario@iegabo.edu.co">
 
             <label for="password">Contraseña:</label>
-            <input type="password" name="Contraseña" id="pass" placeholder="Ingresa tu contraseña">
+            <input type="password" name="Contraseña" id="pass" placeholder="Ingresa tu contraseña" required
+                pattern=".{8,}"
+                title="La contraseña debe tener al menos 8 caracteres">
 
-            <input type="button" value="Ingresa">
+            <input type="submit" value="Ingresa">
         </form>
     </div>
 
     <footer style="display: block; position: fixed; bottom: 12px; left: 0; right: 0; text-align: center;">
         @LauraPosadaGordillo 2024
     </footer>
-    
+
 
 </body>
 
