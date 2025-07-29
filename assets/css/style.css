@@ -43,9 +43,11 @@ body {
     font-size: 10px;
 }
 .gabo {
-    height: 20px;
-    left-margin: 5px;
-    font-size: 10px;
+    width: 40%;
+    max-width: 200px;
+    height: auto;
+    margin:0 auto;
+    position: static;
 }
 h1, h2 {
     color: var(--surface);
