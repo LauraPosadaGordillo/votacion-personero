@@ -38,11 +38,12 @@ body {
 }
 
 .sena {
-    width: 30%;
-    max-width: 100px;
+    position: absolute;
+    top: 20px;      /* Ajusta la distancia desde arriba */
+    right: 20px;    /* Ajusta la distancia desde la derecha */
+    width: 100px;   /* Ajusta el tamaño de la imagen */
     height: auto;
-    left-margin: 20px;
-    position: static;
+    z-index: 10; 
 }
 .gabo {
     width: 30%;
