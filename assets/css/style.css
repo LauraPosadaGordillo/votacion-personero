@@ -38,9 +38,11 @@ body {
 }
 
 .sena {
-    height: 40px;
-    right-margin: 5px;
-    font-size: 10px;
+    width: 40%;
+    max-width: 200px;
+    height: auto;
+    margin:0 auto;
+    position: static;
 }
 .gabo {
     width: 40%;
