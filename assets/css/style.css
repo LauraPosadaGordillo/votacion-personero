@@ -38,20 +38,20 @@ body {
 }
 
 .sena {
-   position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 80px;
+    width: 60px;
     height: auto;
-    margin: 10px;
+    margin: 5px;
 }
 .gabo {
     position: absolute;
     top: 0;
     right: 0;
-    width: 80px;
+    width: 40px;
     height: auto;
-    margin: 10px;
+    margin: 5px;
 }
 h1, h2 {
     color: var(--surface);
