@@ -1,18 +1,17 @@
 
 @font-face {
-    font-family: 'monospace';
-    font-weight: normal; /* Define el peso (normal, bold, etc.) */
-    font-style: normal;  /* Define el estilo (normal, italic, etc.) */
-}
+    font-family:Arial, Helvetica, sans-serif;
+    src: url();
+} 
 
 :root {
     --base-white: #fff;
-    --primary: #236B68;
-    --secondary: #3F8481;
-    --tertiary: #0F5552;
-    --surface: #013B39;
-    --on-surface: #689F9D;
-    --on-surface-50: rgba(106, 160, 158, 0.5);
+    --primary: #6b2b23;
+    --secondary: #8b2a26;
+    --tertiary: #550f0f;
+    --surface: #3b0101;
+    --on-surface: #9f6868;
+    --on-surface-50: rgba(160, 106, 106, 0.5);
 }
 
 footer {
@@ -29,7 +28,7 @@ footer {
 }
 
 body, input, textarea, button {
-    font-family: 'Dancing Script', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -199,7 +198,7 @@ input[type="submit"]  {
 @media (max-width: 639px) {
 
     body{
-        background-color: var(--on-surface);
+        background-color: var(--on-surface);         
     }
 
     form {
