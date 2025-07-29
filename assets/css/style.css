@@ -43,13 +43,13 @@ body {
     left: 0;
     width: 15px;
     height: 10px;
-    margin: 5px;
+    margin: -2px;
 }
 .gabo {
     position: static;
     top: 0;
     right: 0;
-    width: 10px;
+    width: -10px;
     height: 5px;
     margin: 5px;
 }
