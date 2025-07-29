@@ -40,7 +40,7 @@ body {
 .sena {
     height: 60px;
     right-margin: 10px;
-    font-size: 10px;
+    font-size: 5px;
 }
 h1, h2 {
     color: var(--surface);
