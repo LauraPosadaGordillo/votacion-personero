@@ -39,8 +39,8 @@ body {
 
 .sena {
     height: 40px;
-    right-margin: 10px;
-    font-size: 5px;
+    right-margin: 5px;
+    font-size: 10px;
 }
 h1, h2 {
     color: var(--surface);
