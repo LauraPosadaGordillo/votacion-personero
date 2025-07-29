@@ -38,18 +38,18 @@ body {
 }
 
 .sena {
-    width: 40%;
-    max-width: 200px;
+    width: 30%;
+    max-width: 100px;
     height: auto;
-    margin:0 auto;
-    position: left;
+    left-margin: 20px;
+    position: static;
 }
 .gabo {
-    width: 40%;
-    max-width: 200px;
+    width: 30%;
+    max-width: 100px;
     height: auto;
-    margin:0 auto;
-    position: right;
+    right-margin:20px;
+    position: static;
 }
 h1, h2 {
     color: var(--surface);
