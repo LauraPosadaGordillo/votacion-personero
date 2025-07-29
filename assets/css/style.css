@@ -42,14 +42,14 @@ body {
     max-width: 200px;
     height: auto;
     margin:0 auto;
-    position: static;
+    position: left;
 }
 .gabo {
     width: 40%;
     max-width: 200px;
     height: auto;
     margin:0 auto;
-    position: static;
+    position: right;
 }
 h1, h2 {
     color: var(--surface);
