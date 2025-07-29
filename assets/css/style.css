@@ -38,19 +38,20 @@ body {
 }
 
 .sena {
-    position: absolute;
-    top: 20px;      /* Ajusta la distancia desde arriba */
-    right: 20px;    /* Ajusta la distancia desde la derecha */
-    width: 100px;   /* Ajusta el tamaño de la imagen */
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
     height: auto;
-    z-index: 10; 
+    margin: 10px;
 }
 .gabo {
-    width: 30%;
-    max-width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
     height: auto;
-    right-margin:20px;
-    position: static;
+    margin: 10px;
 }
 h1, h2 {
     color: var(--surface);
