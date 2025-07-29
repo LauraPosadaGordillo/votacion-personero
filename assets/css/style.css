@@ -42,7 +42,7 @@ body {
     top: 0;
     left: 0;
     width: 30px;
-    height: auto;
+    height: 10px;
     margin: 5px;
 }
 .gabo {
@@ -50,7 +50,7 @@ body {
     top: 0;
     right: 0;
     width: 20px;
-    height: auto;
+    height: 10px;
     margin: 5px;
 }
 h1, h2 {
