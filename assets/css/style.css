@@ -37,6 +37,11 @@ body {
     font-size: 1rem; /* Tamaño de fuente base */
 }
 
+.sena {
+    height: 60px;
+    right-margin: 10px;
+    font-size: 20px;
+}
 h1, h2 {
     color: var(--surface);
     text-align: center;
