@@ -37,22 +37,22 @@ body {
     font-size: 1rem; /* Tamaño de fuente base */
 }
 
-.sena {
-    position: static;
+.background-logos {
+    position: absolute; /* Asegura que el fondo cubra toda la pantalla */
     top: 0;
     left: 0;
-    width: 10px;
-    height: 10px;
-    margin: 2px;
-}
-.gabo {
-    position: static;
-    top: 0;
     right: 0;
-    width: 0.5px;
-    height: 5px;
-    margin: 2px;
+    bottom: 0;
+    margin: 24px;
+    display: flex; /* Asegura que los logos se alineen correctamente */
+    flex-wrap: wrap; /* Permite que los logos se ajusten al espacio disponible */
+    flex-direction: row; /* Alinea los logos en una fila */
+    justify-content: space-between; /* Distribuye los logos uniformemente */
+    align-items: center; /* Centra los logos verticalmente */
+    z-index: -1; /* Envía el elemento al fondo */
+    opacity: 0.5; /* Opcional: hace los logos semitransparentes */
 }
+
 h1, h2 {
     color: var(--surface);
     text-align: center;
@@ -212,7 +212,17 @@ input[type="submit"]  {
 
 /* Media query para pantallas pequeñas (móviles) */
 @media (max-width: 639px) {
+    .background-logos {
+        align-items: center; /* Centra los logos verticalmente */
+        flex-direction: column; /* Cambia la dirección a columna para móviles */
+    }
 
+    .background-logos > img {
+        flex: 1; /* Hace que cada imagen ocupe una parte igual del espacio */
+        width: 80%; /* Ajusta el ancho de la imagen */
+        object-fit: contain; /* Asegura que la imagen se escale sin recortarse */
+        min-height: 0; /* Soluciona problemas de desbordamiento con flexbox */
+    }
     body{
         background-color: var(--on-surface);         
     }
@@ -224,7 +234,8 @@ input[type="submit"]  {
     }
     
     .form-login {
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.0); /* Sombra para destacar el formulario */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar el formulario */
+        background-color: var(--on-surface-50);
     }
     
     .form-aspirantes{
@@ -256,6 +267,17 @@ input[type="submit"]  {
 
 /* Media query para pantallas medianas (tabletas) */
 @media (min-width: 640px) and (max-width: 1024px) {
+    .background-logos {
+        align-items: center; /* Centra los logos verticalmente */
+        flex-direction: column; /* Cambia la dirección a columna para tabletas */
+    }
+    .background-logos > img {
+        flex: 1; /* Hace que cada imagen ocupe una parte igual del espacio */
+        width: 80%; /* Ajusta el ancho de la imagen */
+        object-fit: contain; /* Asegura que la imagen se escale sin recortarse */
+        min-height: 0; /* Soluciona problemas de desbordamiento con flexbox */
+    }
+
     form {
         width: 70%; /* Un poco más ancho en pantallas medianas */
     }
