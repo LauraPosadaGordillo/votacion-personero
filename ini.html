@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inicio de sesión para Líderes del Mañana">
+    <meta name="keywords" content="Líderes del Mañana, inicio de sesión, votación, I.E. GABO">
+    <meta name="author" content="Laura Rebeca Sofia">
+    <link rel="icon" href="logo_app.png" type="image/x-icon">
+
+    <title>Lideres del mañana</title>
+    <link href="agfa.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class = "background-logos">
+        <img src="logo_sena.webp" alt="sena">
+        <img src="gabo_escu_logo.webp" alt="gabo">
+    </div>
+    <header class="header-login">
+        <h1>LIDERES DEL MAÑANA</h1>
+    </header>
+
+    <div class="contenedor-login">
+        <form action="aspirantes.html" method="get" class="form-login">
+            <h2>Inicio de sesión del personero</h2>
+            <label for="email">Correo electrónico del personero:</label>
+            <input type="email" name="Correo" id="email" placeholder="Ingresa tu correo institucional" required
+                title="Por favor, ingresa un correo electrónico válido. Ejemplo: usuario@iegabo.edu.co" autocomplete="email">
+
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="Contraseña" id="pass" placeholder="Ingresa tu contraseña" required
+                pattern=".{8,}"
+                title="La contraseña debe tener al menos 8 caracteres">
+
+            <a class="input"  href="admi2.html">
+                <button type="button">ingresar</button>
+            </a>
+        </form>
+    </div>
+
+    <footer style="display: block; position: fixed; bottom: 12px; left: 0; right: 0; text-align: center;">
+        @LauraRebecaSofia 2025
+    </footer>
+
+
+</body>
+
+</html>
