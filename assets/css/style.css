@@ -324,7 +324,9 @@ input[type="submit"]  {
         height: 300px;
     }
 }
-.nbot{
+.input{
     type="button" 
     style="background-color: #28a745; color: white; border-radius: 8px; padding: 10px 24px; border: none;"
 }
+
+
